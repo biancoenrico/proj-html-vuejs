@@ -1,1 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+img {
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+}
+
+nav {
+  color: white;
+  padding-top: 50px;
+}
+nav .container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+nav .container .logo {
+  width: 300px;
+}
+nav .container .flex {
+  display: flex;
+  align-items: center;
+}
+nav .container .flex li {
+  display: inline-block;
+  margin: 0px 10px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: right;
+}
+nav .container .flex .yellow {
+  padding: 15px 25px;
+  border-radius: 999px;
+  outline: none;
+  background-color: #e9d758;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  border: none;
+}
+
+header {
+  background-color: #de6f70;
+}
+header .header-title {
+  text-align: center;
+  padding: 80px 0;
+}
+header .header-title h1 {
+  font-size: 80px;
+  color: white;
+}
+header .header-title p {
+  color: white;
+  font-size: 22px;
+}
+header .header-title div {
+  margin-top: 40px;
+}
+header .header-title div .yellow {
+  padding: 15px 25px;
+  border-radius: 999px;
+  outline: none;
+  background-color: #e9d758;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  font-size: 22px;
+}
+header .header-title div .white {
+  padding: 15px 25px;
+  border-radius: 999px;
+  outline: none;
+  background-color: white;
+  font-size: 25px;
+  font-weight: bold;
+  color: #de6f70;
+  border: none;
+  margin-left: 10px;
+  font-size: 22px;
+}

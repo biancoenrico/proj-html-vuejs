@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">   
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="dist/app.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="root">
+        <header>
+            <!-- NAVBAR -->
+            <nav>
+                <div class="container">
+                    <div class="logo">
+                        <img src="img/theme_eduprime_logo.png" alt="">
+                    </div>
+                    <div class="flex">
+                        <ul>
+                            <li v-for="item in navList">{{item.name}}</li>
+                        </ul>
+                        
+                        <div>
+                            <button class="yellow">view courses</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- END NAVBAR -->
+            <div class="header-title">
+                <h1>key to your success</h1>
+                <p>Eduprime is the most versatile WordPress theme for educational purposes,<br> showcasing universities, courses, secondary schools etc.</p>
+                <div>
+                    <button class="yellow">search courses</button>
+                    <button class="white">apply for university</button>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <script src="dist/app.js"></script>
+</body>
+</html>

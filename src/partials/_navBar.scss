@@ -1,0 +1,33 @@
+nav{
+    color: $textPrimaryColor;
+    padding-top: 50px;
+
+    .container{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+
+        .logo{
+            width: 300px;
+        }
+
+        .flex{
+            display: flex;
+            align-items: center;
+
+            li{
+                display: inline-block;
+                margin: 0px 10px;
+                font-size: $standardFontSize;
+                font-weight: bold;
+                text-align: right
+            }
+
+            .yellow{
+                @include bigButton;
+                @include yellowButton;
+            }
+        }
+    }
+}
