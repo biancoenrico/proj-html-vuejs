@@ -202,7 +202,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, animi ut aspernatur sunt nihil,<br>
                                     dolor, accusantium quasi in sit tenetur doloribus autem at cumque exercitationem vel iure quo maiores.
                                 </p>
-                                <button class="red">browse trough courses</button>
+                                <button class="red">discover the methods</button>
                             </div>
                             <div>
                                 <img src="img/Exam-Illustration.png" alt="">
@@ -218,7 +218,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, animi ut aspernatur sunt nihil,<br>
                                     dolor, accusantium quasi in sit tenetur doloribus autem at cumque exercitationem vel iure quo maiores.
                                 </p>
-                                <button class="red">browse trough courses</button>
+                                <button class="red">list of fees</button>
                             </div>
                             <div>
                                 <img src="img/Girl-Illustration.png" alt="">
@@ -227,7 +227,50 @@
                     </div>
                 </section>
                 <!-- End Methods -->
+
+                <!-- Subscribe -->
+                <section class="subscribe">
+                    <div class="container">
+                        <div class="flex">
+                            <div>
+                                <h2>subscribe now to Our Newsletter</h2>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="email address">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Subscribe -->
+
+                <!-- Partners -->
+                <section class="partners">
+                    <div class="container">
+                        <h2>partners</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus blanditiis quas,</p>
+                        <div class="flex">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </section>
+                <!-- End Partners -->
         </main>
+        <footer>
+            <div class="container">
+
+                <ul v-for="(item , index) in footerList">
+                    <li v-for="item in footerList[index].list">{{item}}</li>
+                </ul>
+
+            </div>
+        </footer>
     </div>
 
     <script src="dist/app.js"></script>

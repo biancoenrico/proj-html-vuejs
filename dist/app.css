@@ -226,3 +226,29 @@ header .header-title div .white {
 .methods .reverse {
   flex-direction: row-reverse;
 }
+
+.subscribe {
+  background-color: #de6f70;
+  padding: 30px 0;
+}
+.subscribe .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+.subscribe .flex h2 {
+  font-size: 25px;
+}
+.subscribe .flex input {
+  border-radius: 999px;
+  border: 1px solid black;
+  padding: 25px 40px;
+  width: 500px;
+}
+
+.partners {
+  height: 500px;
+}
+
+footer ul {
+  display: inline-block;
+}

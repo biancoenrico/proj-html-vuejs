@@ -101,3 +101,21 @@
         flex-direction: row-reverse;
     }
 }
+.subscribe{
+    background-color: $primaryColor;
+    padding: 30px 0;
+    .flex{
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            font-size: $mediumFontSize;
+        }
+        input{
+            @include searchBar;
+            width: 500px;
+        }
+    }
+}
+.partners{
+    height: 500px;
+}

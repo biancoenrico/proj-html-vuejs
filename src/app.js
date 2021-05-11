@@ -5,47 +5,57 @@ var app = new Vue({
       [
         {
             name:'Home',
-            list:{
-                element:'',
-            }
+            list:[]
         },
         {
             name:'Courses',
-            list:{
-                element:'',
-            }
+            list:[]
         },
         {
             name:'About Us',
-            list:{
-                element:'',
-            }
+            list:[]
         },
         {
             name:'News',
-            list:{
-                element:'',
-            }
+            list:[]
         },
         {
             name:'Pages',
-            list:{
-                element:'',
-            }
+            list:[]
         },
         {
             name:'Contact',
-            list:{
-                element:'',
-            }
+            list:[]
         },
         {
             name:'Purchase',
-            list:{
-                element:'',
-            }
+            list:[]
         },
-      ]
+      ],
+      footerList: [
+        {
+            name:'Get EduPrime',
+            list:[
+                'Request a Website',
+                'Browse Themes',
+                'Payment Options',
+                'Support System',
+                'Checkout',
+                'Purchase Theme',
+            ]
+        },
+        {
+            name:'networking',
+            list:[
+                'Purchase Theme',
+                'Our Benefits',
+                'Ous Team',
+                'Our Services',
+                'Other Products',
+                'My Account',
+            ]
+        }
+      ],
     },
     methods: {
 

@@ -37,3 +37,9 @@
     background-image: url($headerBackgroundImage); 
     background-repeat: no-repeat
 }
+
+@mixin searchBar {
+    border-radius: 999px;
+    border: 1px solid black;
+    padding: 25px 40px;
+}
