@@ -62,8 +62,7 @@ nav .container .flex .yellow {
 
 header {
   background-color: #de6f70;
-  background-image: url(/images/theme_slider2_bg-1.jpg?851a694d650039b6a1a2658d8650c16c);
-  background-repeat: no-repeat;
+  background-image: url(/images/svg-0.svg?f4496f08cb8df58b18c75588dc734965);
 }
 header .header-title {
   text-align: center;
@@ -240,8 +239,9 @@ header .header-title div .white {
 }
 .subscribe .flex input {
   border-radius: 999px;
-  border: 1px solid black;
+  border: none;
   padding: 25px 40px;
+  outline: none;
   width: 500px;
 }
 
@@ -249,6 +249,69 @@ header .header-title div .white {
   height: 500px;
 }
 
-footer ul {
+footer {
+  background-color: #de6f70;
+  color: white;
+  padding: 100px 0;
+}
+footer .flex {
+  justify-content: space-between;
+}
+footer .flex ul {
   display: inline-block;
+  margin-right: 60px;
+}
+footer .flex ul li {
+  margin-bottom: 15px;
+}
+footer .flex ul .name {
+  font-size: 25px;
+  font-weight: bold;
+}
+footer .flex .logo {
+  width: 300px;
+  margin-bottom: 20px;
+}
+footer .flex .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #e9d758;
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 20px;
+}
+footer .flex .search {
+  width: 30%;
+}
+footer .flex .search input {
+  border-radius: 999px;
+  border: none;
+  padding: 25px 40px;
+  outline: none;
+  font-size: 18px;
+  width: 400px;
+}
+footer .flex .search p {
+  text-align: right;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 30px;
+}
+footer .flex .search .cat {
+  text-align: right;
+}
+footer .flex .search .cat .red {
+  padding: 10px 20px;
+  border-radius: 999px;
+  outline: none;
+  background-color: #de6f70;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  font-size: 10px;
+  border: 1px solid white;
+  margin-right: 5px;
+  margin-top: 10px;
 }

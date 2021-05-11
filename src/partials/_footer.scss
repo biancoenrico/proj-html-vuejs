@@ -1,5 +1,57 @@
 footer{
-    ul{
-        display: inline-block;
+    background-color: $primaryColor;
+    color: $textPrimaryColor;
+    padding: 100px 0;
+    .flex{
+        justify-content: space-between;
+        ul{
+            display: inline-block;
+            margin-right: 60px;
+            li{
+                margin-bottom: 15px;
+            }
+            .name{
+                font-size: $mediumFontSize;
+                font-weight: bold
+            }
+        }
+        .logo{
+            width: 300px;
+            margin-bottom: 20px;
+        }
+        .circle{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid $tertiaryColor;
+            display: inline-block;
+            margin-right: 5px;
+            margin-top: 20px;
+        }
+        .search{
+            width: 30%;
+            input{
+                @include searchBar;
+                font-size: $standardFontSize;
+                width: 400px;
+            }
+            p{
+                text-align: right;
+                font-weight: bold;
+                font-size: $standardFontSize;
+                margin-top: 30px;
+            }
+            .cat{
+                text-align: right;
+                .red{
+                    @include standardButton;
+                    @include redButton;
+                    font-size: 10px;
+                    border: 1px solid white;
+                    margin-right: 5px;
+                    margin-top: 10px;
+                }
+            }
+        }
     }
 }

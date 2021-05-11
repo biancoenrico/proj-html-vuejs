@@ -54,8 +54,17 @@ var app = new Vue({
                 'Other Products',
                 'My Account',
             ]
-        }
+        },
       ],
+      categories:[
+        'ECONOMY',
+        'DESIGN',
+        'COACHING',
+        'BUSINESS',
+        'MEDICINE',
+        'LAW',
+        'FITNESS',
+      ]
     },
     methods: {
 

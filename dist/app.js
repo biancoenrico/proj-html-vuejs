@@ -38,7 +38,8 @@ var app = new Vue({
     }, {
       name: 'networking',
       list: ['Purchase Theme', 'Our Benefits', 'Ous Team', 'Our Services', 'Other Products', 'My Account']
-    }]
+    }],
+    categories: ['ECONOMY', 'DESIGN', 'COACHING', 'BUSINESS', 'MEDICINE', 'LAW', 'FITNESS']
   },
   methods: {}
 });

@@ -264,10 +264,34 @@
         </main>
         <footer>
             <div class="container">
-
-                <ul v-for="(item , index) in footerList">
-                    <li v-for="item in footerList[index].list">{{item}}</li>
-                </ul>
+                
+                <div class="flex">
+                    <div>
+                        <div class="logo">
+                            <img src="img/theme_eduprime_logo.png" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                            Quas asperiores fugiat voluptates dolores, odit dolore sunt <br>
+                            quasi mollitia. Ullam neque voluptates soluta quam veniam autem <br>
+                        </p>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <div>
+                        <ul v-for="(item , index) in footerList">
+                            <li class="name">{{item.name}}</li>
+                            <li v-for="item in footerList[index].list">{{item}}</li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="search...">
+                        <p>search categories</p>
+                        <div class="cat">
+                            <button class="red" v-for="items in categories">{{items}}</button>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </footer>
