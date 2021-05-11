@@ -1,15 +1,40 @@
-// text styles
+// TEXT STYLES
 $largeFontSize: 80px;
 $mediumFontSize: 25px;
-$standardFontSize: 22px;
+$standardFontSize: 18px;
 $textPrimaryColor: white;
 
-// page colors
-$primaryColor: #de6f70;
+// ----------------------
 
-// buttons
+// IMAGES
+$testSolution:'..';
+$headerBackgroundImage: "../../img/theme_slider2_bg-1.jpg";
+
+// END IMAGES
+
+// ----------------------
+
+// COMMONS
+$primaryColor: #de6f70;
+$secondaryColor: white;
+
+
+// END COMMONS
+
+// ----------------------
+
+// BUTTONS
 $buttonPrimaryColor: #e9d758;
 $buttonPrimarytext: white;
 
+// --- //
 $buttonSecondaryColor: white;
 $buttonSecondaryText: #de6f70;
+
+// --- //
+$buttonTertiaryColor: #de6f70;
+$buttonTertiaryText: white;
+
+// END BUTTONS
+
+// ----------------------

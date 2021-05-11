@@ -1,0 +1,103 @@
+.courses{
+    .flex{
+        .yellow{
+            @include bigButton;
+            @include yellowButton; 
+            margin-right: 10px;
+            font-size: $standardFontSize;
+        }
+    }
+}
+.faculties{
+    ul{
+        display: flex;
+        li{
+            padding:50px
+        }
+    }
+    .flex{
+        flex-direction: row-reverse;
+        .red{
+            @include bigButton;
+            @include redButton; 
+            margin-right: 10px;
+            font-size: $standardFontSize;
+        }
+    }
+}
+.university{
+    background-color: $primaryColor;
+    padding: 100px 0;
+    p{
+        display: inline-block;
+        width: 30%;
+    }
+    .timeline-top{
+
+    }
+    .timeline-bottom{
+        
+    }
+}
+.events{
+    padding: 100px 0;
+    background-color: $primaryColor;
+    .flex{
+        justify-content: space-around;
+        .session{
+            background-color: $secondaryColor;
+            border-radius: 15px;
+            padding: 20px;
+            width: 30%;
+            .red{
+                @include standardButton;
+                @include redButton;
+                font-size: $standardFontSize;
+            }
+        }
+    }
+    div{
+        margin-top: 40px;
+        text-align: center;
+        .yellow{
+            @include bigButton;
+            @include yellowButton;
+            font-size: $standardFontSize;
+        }
+    }
+}
+.references{
+    text-align: center;
+    margin: 200px 0;
+    .container{
+        margin: auto;
+        .flex{
+            justify-content: space-around;
+            .item{
+                img{
+                    width: 25%;
+                }
+            }
+        }
+    }
+}
+.methods{
+    .flex{
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .desc{
+        margin: 80px;
+    }
+    img{
+        width: 80%;
+    }
+    .red{
+        @include bigButton;
+        @include redButton;
+        font-size: $standardFontSize;
+    }
+    .reverse{
+        flex-direction: row-reverse;
+    }
+}

@@ -1,5 +1,6 @@
 header{
     background-color: $primaryColor;
+    @include background;
     .header-title{
         text-align: center;
         padding: 80px 0;

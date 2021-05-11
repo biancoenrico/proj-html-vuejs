@@ -16,6 +16,15 @@ body {
   font-family: "Catamaran", sans-serif;
 }
 
+.container {
+  width: 65%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
 nav {
   color: white;
   padding-top: 50px;
@@ -36,12 +45,12 @@ nav .container .flex {
 nav .container .flex li {
   display: inline-block;
   margin: 0px 10px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   text-align: right;
 }
 nav .container .flex .yellow {
-  padding: 15px 25px;
+  padding: 20px 35px;
   border-radius: 999px;
   outline: none;
   background-color: #e9d758;
@@ -53,6 +62,8 @@ nav .container .flex .yellow {
 
 header {
   background-color: #de6f70;
+  background-image: url(/images/theme_slider2_bg-1.jpg?851a694d650039b6a1a2658d8650c16c);
+  background-repeat: no-repeat;
 }
 header .header-title {
   text-align: center;
@@ -64,13 +75,13 @@ header .header-title h1 {
 }
 header .header-title p {
   color: white;
-  font-size: 22px;
+  font-size: 18px;
 }
 header .header-title div {
   margin-top: 40px;
 }
 header .header-title div .yellow {
-  padding: 15px 25px;
+  padding: 20px 35px;
   border-radius: 999px;
   outline: none;
   background-color: #e9d758;
@@ -79,10 +90,10 @@ header .header-title div .yellow {
   color: white;
   border: none;
   margin-right: 10px;
-  font-size: 22px;
+  font-size: 18px;
 }
 header .header-title div .white {
-  padding: 15px 25px;
+  padding: 20px 35px;
   border-radius: 999px;
   outline: none;
   background-color: white;
@@ -91,5 +102,127 @@ header .header-title div .white {
   color: #de6f70;
   border: none;
   margin-left: 10px;
-  font-size: 22px;
+  font-size: 18px;
+}
+
+.courses .flex .yellow {
+  padding: 20px 35px;
+  border-radius: 999px;
+  outline: none;
+  background-color: #e9d758;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.faculties ul {
+  display: flex;
+}
+.faculties ul li {
+  padding: 50px;
+}
+.faculties .flex {
+  flex-direction: row-reverse;
+}
+.faculties .flex .red {
+  padding: 20px 35px;
+  border-radius: 999px;
+  outline: none;
+  background-color: #de6f70;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.university {
+  background-color: #de6f70;
+  padding: 100px 0;
+}
+.university p {
+  display: inline-block;
+  width: 30%;
+}
+.events {
+  padding: 100px 0;
+  background-color: #de6f70;
+}
+.events .flex {
+  justify-content: space-around;
+}
+.events .flex .session {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 30%;
+}
+.events .flex .session .red {
+  padding: 10px 20px;
+  border-radius: 999px;
+  outline: none;
+  background-color: #de6f70;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+.events div {
+  margin-top: 40px;
+  text-align: center;
+}
+.events div .yellow {
+  padding: 20px 35px;
+  border-radius: 999px;
+  outline: none;
+  background-color: #e9d758;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+
+.references {
+  text-align: center;
+  margin: 200px 0;
+}
+.references .container {
+  margin: auto;
+}
+.references .container .flex {
+  justify-content: space-around;
+}
+.references .container .flex .item img {
+  width: 25%;
+}
+
+.methods .flex {
+  align-items: center;
+  margin-bottom: 100px;
+}
+.methods .desc {
+  margin: 80px;
+}
+.methods img {
+  width: 80%;
+}
+.methods .red {
+  padding: 20px 35px;
+  border-radius: 999px;
+  outline: none;
+  background-color: #de6f70;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+.methods .reverse {
+  flex-direction: row-reverse;
 }
