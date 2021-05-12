@@ -47,6 +47,7 @@ nav .container {
 }
 nav .container .logo {
   width: 300px;
+  cursor: pointer;
 }
 nav .container .flex {
   display: flex;
@@ -58,6 +59,7 @@ nav .container .flex li {
   font-size: 16px;
   font-weight: bold;
   text-align: right;
+  cursor: pointer;
 }
 nav .container .flex .yellow {
   padding: 20px 35px;
@@ -341,6 +343,9 @@ header .header-title div .white:hover {
   color: white;
   border: none;
 }
+.events .flex .session .red .fa-plus {
+  font-size: 12px;
+}
 .events .flex .session .red:hover {
   background-color: #e9d758;
 }
@@ -380,12 +385,31 @@ header .header-title div .white:hover {
 .references .container .flex .item {
   box-shadow: 0px 0px 17px -12px rgba(0, 0, 0, 0.75);
   padding: 10px;
+  padding-bottom: 30px;
   margin-right: 40px;
   line-height: 35px;
+  position: relative;
 }
 .references .container .flex .item img {
   width: 40%;
   margin: 20px 0px;
+}
+.references .container .flex .item .red {
+  padding: 10px 20px;
+  border-radius: 999px;
+  outline: none;
+  cursor: pointer;
+  background-color: #de6f70;
+  font-weight: bold;
+  color: white;
+  border: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.references .container .flex .item .red:hover {
+  background-color: #e9d758;
 }
 
 .methods .flex {
@@ -434,12 +458,31 @@ header .header-title div .white:hover {
   font-size: 40px;
   color: white;
 }
-.subscribe .flex input {
+.subscribe .flex div {
+  position: relative;
+}
+.subscribe .flex div input {
   border-radius: 999px;
   border: none;
   padding: 25px 40px;
   outline: none;
   width: 550px;
+}
+.subscribe .flex div .circle {
+  position: absolute;
+  right: -10px;
+  top: -20px;
+  width: 65px;
+  height: 65px;
+  background-color: #e9d758;
+  text-align: center;
+  line-height: 65px;
+  font-size: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .partners .container {
@@ -485,6 +528,7 @@ footer .flex ul {
 }
 footer .flex ul li {
   margin-bottom: 15px;
+  cursor: pointer;
 }
 footer .flex ul .name {
   font-size: 25px;
@@ -495,24 +539,49 @@ footer .flex .logo {
   margin-bottom: 20px;
 }
 footer .flex .circle {
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
-  border: 2px solid #e9d758;
   display: inline-block;
   margin-right: 5px;
   margin-top: 20px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 65px;
+  font-size: 25px;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #e9d758;
 }
 footer .flex .search {
   width: 35%;
 }
-footer .flex .search input {
+footer .flex .search div {
+  position: relative;
+}
+footer .flex .search div input {
   border-radius: 999px;
   border: none;
   padding: 25px 40px;
   outline: none;
   font-size: 16px;
   width: 400px;
+}
+footer .flex .search div .circle {
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 65px;
+  font-size: 25px;
+  position: absolute;
+  right: 20px;
+  top: -20px;
+  width: 68px;
+  height: 68px;
+  line-height: 68px;
+  background-color: #e9d758;
 }
 footer .flex .search p {
   text-align: right;

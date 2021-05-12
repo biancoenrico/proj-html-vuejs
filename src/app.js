@@ -98,13 +98,13 @@ var app = new Vue({
         {
             icon:'img/Computer-tabs-v2.png',
             img:'img/Computer-Science.png',
-            name: 'Informatic faculty',
+            name: 'Informatics',
             desc: 'Informatics is the science of how to use data, information and knowledge to improve human health and the delivery of health care services. Health IT is part of informatics and an essential aspect of AMIA, but technology and technological considerations are only one component of the association\'s work.',
         },
         {
             icon:'img/Palette-tabs-v2.png',
             img:'img/Graphic-design.png',
-            name: 'graphics faculty',
+            name: 'graphics and design',
             desc: 'Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users\' specific needs and focus on the logic of displaying elements in interactive designs, to optimize the user experience.',
         }
       ],

@@ -56,3 +56,15 @@
     top: 0;
     left: 0;
 }
+@mixin circle{
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+@mixin centerCircle {
+    text-align: center;
+    line-height: 65px;
+    font-size: 25px;
+}

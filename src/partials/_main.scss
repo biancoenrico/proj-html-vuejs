@@ -196,6 +196,9 @@
                 box-shadow: 0px 2px 2px -2px rgb(0 0 0 / 75%);
                 @include standardButton;
                 @include redButton;
+                .fa-plus{
+                    font-size: 12px;
+                }
             }
             .red:hover{
                 background-color: $buttonPrimaryColor;
@@ -230,11 +233,24 @@
             .item{
                 box-shadow: 0px 0px 17px -12px rgb(0 0 0 / 75%);
                 padding: 10px;
+                padding-bottom: 30px;
                 margin-right: 40px;
                 line-height: 35px;
+                position: relative;
                 img{
                     width: 40%;
                     margin: 20px 0px;
+                }
+                .red{
+                    @include standardButton;
+                    @include redButton;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50% , -50%);
+                }
+                .red:hover{
+                    background-color: $buttonPrimaryColor;
                 }
             }
         }
@@ -279,9 +295,22 @@
             font-size: 40px;
             color: $textPrimaryColor
         }
-        input{
-            @include searchBar;
-            width: 550px;
+        div{
+            position: relative;
+            input{
+                @include searchBar;
+                width: 550px;
+            }
+            .circle{
+                position: absolute;
+                right: -10px;
+                top: -20px;
+                width: 65px;
+                height: 65px;
+                background-color: $tertiaryColor;
+                @include centerCircle;
+                @include circle;
+            }
         }
     }
 }

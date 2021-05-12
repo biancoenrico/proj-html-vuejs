@@ -9,18 +9,20 @@ nav{
 
         .logo{
             width: 300px;
+            cursor: pointer;
         }
 
         .flex{
             display: flex;
             align-items: center;
-
+            
             li{
                 display: inline-block;
                 margin: 0px 10px;
                 font-size: $standardFontSize;
                 font-weight: bold;
-                text-align: right
+                text-align: right;
+                cursor: pointer;
             }
 
             .yellow{

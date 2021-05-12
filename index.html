@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">   
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
@@ -22,7 +23,7 @@
                     </div>
                     <div class="flex">
                         <ul>
-                            <li v-for="item in navList">{{item.name}}</li>
+                            <li v-for="item in navList">{{item.name}} <i v-if="item.name != 'Contact' && item.name != 'Purchase'" class="fas fa-sort-down"></i></li>
                         </ul>
                         
                         <div>
@@ -36,8 +37,8 @@
                 <h1>key to your success</h1>
                 <p>Eduprime is the most versatile WordPress theme for educational purposes,<br> showcasing universities, courses, secondary schools etc.</p>
                 <div>
-                    <button class="yellow">search courses</button>
-                    <button class="white">apply for university</button>
+                    <button class="yellow"><i class="fas fa-search"></i> search courses</button>
+                    <button class="white"><i class="fas fa-user-plus"></i> apply for university</button>
                 </div>
             </div>
         </header>
@@ -106,6 +107,8 @@
                 </section>
                 <!--End Faculties -->
 
+                <!--  -->
+
                 <!-- University -->
                 <section class="university">
                     <div class="container">
@@ -150,6 +153,9 @@
                     </div>
                 </section>
                 <!-- End University -->
+
+                <!--  -->
+
                 <!-- Events -->
                 <section class="events">
                     <div class="container">
@@ -161,7 +167,7 @@
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit, sed do eiusmod tempor[...]
                                 </p>
-                                <button class="red">find more</button>
+                                <button class="red"><i class="fas fa-plus"></i> find more</button>
                             </li>
                             <li class="session">
                                 <h3>coaching sessions</h3>
@@ -170,7 +176,7 @@
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit, sed do eiusmod tempor[...]
                                 </p>
-                                <button class="red">find more</button>
+                                <button class="red"><i class="fas fa-plus"></i> find more</button>
                             </li>
                             <li class="session">
                                 <h3>coaching sessions</h3>
@@ -179,7 +185,7 @@
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit, sed do eiusmod tempor[...]
                                 </p>
-                                <button class="red">find more</button>
+                                <button class="red"><i class="fas fa-plus"></i> find more</button>
                             </li>
                         </ul>
                         <div>
@@ -188,6 +194,8 @@
                     </div>
                 </section>
                 <!-- End Events -->
+
+                <!--  -->
 
                 <!-- latest Courses -->
                 <section class="references">
@@ -199,33 +207,35 @@
                                 <h3><strong>make better decisions</strong></h3>
                                 <span>teacher: <strong>james collins</strong> </span><br>
                                 <span>price: <strong>$21</strong> </span>
-                                <button class="red"></button>
+                                <button class="red"><i class="far fa-eye"></i> view courses</button>
                             </li>
                             <li class="item">
                                 <img src="img/Speaker-icon.png" alt="">
                                 <h3><strong>how to be a speaker</strong></h3>
                                 <span>teacher: <strong>james collins</strong> </span><br>
                                 <span>price: <strong>free</strong> </span>
-                                <button class="red"></button>
+                                <button class="red"><i class="far fa-eye"></i> view courses</button>
                             </li>
                             <li class="item">
                                 <img src="img/Network-icon.png" alt="">
                                 <h3><strong>network introductions</strong></h3>
                                 <span>teacher: <strong>james collins</strong> </span><br>
                                 <span>price: <strong>free</strong> </span>
-                                <button class="red"></button>
+                                <button class="red"><i class="far fa-eye"></i> view courses</button>
                             </li>
                             <li class="item">
                                 <img src="img/Brand-icon.png" alt="">
                                 <h3><strong>brand management</strong></h3>
                                 <span>teacher: <strong>james collins</strong> </span><br>
-                                <span>price: <strong>free</strong> </span>
-                                <button class="red"></button>
+                                <span>price: <strong>free</strong></span>
+                                <button class="red"><i class="far fa-eye"></i> view courses</button>
                             </li>
                         </ul>
                     </div>
                 </section>
                 <!-- End latest Courses -->
+
+                <!--  -->
 
                 <!-- Methods -->
                 <section class="methods">
@@ -269,6 +279,8 @@
                 </section>
                 <!-- End Methods -->
 
+                <!--  -->
+
                 <!-- Subscribe -->
                 <section class="subscribe">
                     <div class="container">
@@ -278,11 +290,14 @@
                             </div>
                             <div>
                                 <input type="text" placeholder="email address">
+                                <div class="circle"><i class="fas fa-paper-plane"></i></div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <!-- End Subscribe -->
+
+                <!--  -->
 
                 <!-- Partners -->
                 <section class="partners">
@@ -315,9 +330,9 @@
                             Quas asperiores fugiat voluptates dolores,<br>
                             quasi mollitia. Ullam neque voluptates soluta quam <br>
                         </p>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
+                        <div class="circle"><i class="fab fa-facebook-f"></i></div>
+                        <div class="circle"><i class="fab fa-twitter"></i></div>
+                        <div class="circle"><i class="fab fa-instagram"></i></div>
                     </div>
 
                     <div>
@@ -328,7 +343,10 @@
                     </div>
 
                     <div class="search">
-                        <input type="text" placeholder="search...">
+                        <div>
+                            <input type="text" placeholder="search...">
+                            <div class="circle"><i class="fas fa-search"></i></div>
+                        </div>
                         <p>search categories</p>
                         <div class="cat">
                             <button class="red" v-for="items in categories">{{items}}</button>
