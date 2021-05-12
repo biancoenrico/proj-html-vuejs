@@ -82,20 +82,9 @@
                 
                     <div class="list-style">
                         <ul>
-                            <li>
-                                <img src="img/Gavel-v2.png" alt="">
-                            </li>
-                            <li>
-                                <img src="img/Coins-tabs-v2.png" alt="">
-                            </li>
-                            <li>
-                                <img src="img/Medicine-tabs-v2.png" alt="">
-                            </li>
-                            <li>
-                                <img src="img/Computer-tabs-v2.png" alt="">
-                            </li>
-                            <li>
-                                <img src="img/Palette-tabs-v2.png" alt="">
+                            <li :class="{active: selectedInfo == index}" v-for="(items , index) in facultyInfo" @click="selectedInfo = index">
+                                <div class="square" :class="{visible: selectedInfo == index}"></div>
+                                <img :src="items.icon" alt="">
                             </li>
                         </ul>
                     </div>
@@ -103,17 +92,14 @@
                     <div class="container">
                         <div class="flex">
                             <div class="desc">
-                                <h2>law faculty</h2>
+                                <h2>{{facultyInfo[selectedInfo].name}}</h2>
                                 <p>
-                                    Learning from world-leading academics and practitioners, you'll not only receive
-                                    an outstanding grounding in the theory of law, but you will be able to understand
-                                    how those principles are applied in practice through a range of student-led
-                                    activities and competitions.
+                                    {{facultyInfo[selectedInfo].desc}}
                                 </p>
                                 <button class="red">browse trough courses</button>
                             </div>
                             <div class="image">
-                                <img src="img/Gavel-Illustration-e1556884768193.png" alt="">
+                                <img :src="facultyInfo[selectedInfo].img" alt="">
                             </div>
                         </div>
                     </div>

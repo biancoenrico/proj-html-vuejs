@@ -38,6 +38,24 @@
         width: 65%;
         margin: auto;
         li{
+            position: relative;
+            padding:30px;
+            border: 1px solid lightgray;
+            .square{
+                position: absolute;
+                top: 92%;
+                left: 43%;
+                width: 30px;
+                height: 30px;
+                transform: rotate(45deg);
+                background-color: $primaryColor;
+                display: none;
+            }
+            .visible{
+                display: block;
+            }            
+        }
+        .active{
             padding:30px;
             background-color: $primaryColor;
             border: 1px solid lightgray;
@@ -47,31 +65,34 @@
             
         }
     }
-    .flex{
-        flex-direction: row-reverse;
-        align-items: center;
-        .desc{
-            text-align: center;
-            h2{
-                font-size: $secondaryTitleSize;
-                margin-bottom: 30px;
+    .container{
+        height: 600px;
+        .flex{
+            flex-direction: row-reverse;
+            align-items: center;
+            .desc{
+                text-align: center;
+                h2{
+                    font-size: $secondaryTitleSize;
+                    margin-bottom: 30px;
+                }
+                p{
+                    line-height: 30px;
+                    margin-bottom: 30px;
+                    color: $textSecondaryColor;
+                }
+                .red{
+                    @include bigButton;
+                    @include redButton; 
+                    margin-right: 10px;
+                }
             }
-            p{
-                line-height: 30px;
-                margin-bottom: 30px;
-                color: $textSecondaryColor;
-            }
-            .red{
-                @include bigButton;
-                @include redButton; 
-                margin-right: 10px;
-            }
-        }
-        .image{
-            width: 100%;
-            margin: 100px;
-            img{
+            .image{
                 width: 100%;
+                margin: 100px;
+                img{
+                    width: 100%;
+                }
             }
         }
     }
@@ -239,12 +260,12 @@
         justify-content: space-between;
         align-items: center;
         h2{
-            font-size: $secondaryTitleSize;
+            font-size: 40px;
             color: $textPrimaryColor
         }
         input{
             @include searchBar;
-            width: 450px;
+            width: 550px;
         }
     }
 }

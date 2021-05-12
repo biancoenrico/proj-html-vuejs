@@ -153,30 +153,51 @@ header .header-title div .white {
   margin: auto;
 }
 .faculties ul li {
+  position: relative;
+  padding: 30px;
+  border: 1px solid lightgray;
+}
+.faculties ul li .square {
+  position: absolute;
+  top: 92%;
+  left: 43%;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  background-color: #e56768;
+  display: none;
+}
+.faculties ul li .visible {
+  display: block;
+}
+.faculties ul .active {
   padding: 30px;
   background-color: #e56768;
   border: 1px solid lightgray;
 }
-.faculties ul li img {
+.faculties ul .active img {
   filter: brightness(10000%);
 }
-.faculties .flex {
+.faculties .container {
+  height: 600px;
+}
+.faculties .container .flex {
   flex-direction: row-reverse;
   align-items: center;
 }
-.faculties .flex .desc {
+.faculties .container .flex .desc {
   text-align: center;
 }
-.faculties .flex .desc h2 {
+.faculties .container .flex .desc h2 {
   font-size: 50px;
   margin-bottom: 30px;
 }
-.faculties .flex .desc p {
+.faculties .container .flex .desc p {
   line-height: 30px;
   margin-bottom: 30px;
   color: gray;
 }
-.faculties .flex .desc .red {
+.faculties .container .flex .desc .red {
   padding: 20px 35px;
   border-radius: 999px;
   outline: none;
@@ -186,11 +207,11 @@ header .header-title div .white {
   border: none;
   margin-right: 10px;
 }
-.faculties .flex .image {
+.faculties .container .flex .image {
   width: 100%;
   margin: 100px;
 }
-.faculties .flex .image img {
+.faculties .container .flex .image img {
   width: 100%;
 }
 
@@ -376,7 +397,7 @@ header .header-title div .white {
   align-items: center;
 }
 .subscribe .flex h2 {
-  font-size: 50px;
+  font-size: 40px;
   color: white;
 }
 .subscribe .flex input {
@@ -384,7 +405,7 @@ header .header-title div .white {
   border: none;
   padding: 25px 40px;
   outline: none;
-  width: 450px;
+  width: 550px;
 }
 
 .partners .container {
