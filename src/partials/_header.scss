@@ -20,10 +20,17 @@ header{
                 @include yellowButton; 
                 margin-right: 10px;
             }
+            .yellow:hover{
+                background-color: $hoverSecondaryColor;
+            }
             .white{
                 @include bigButton;
                 @include whiteButton;
                 margin-left: 10px;
+            }
+            .white:hover{
+                background-color: $hoverSecondaryColor;
+                color: $textPrimaryColor;
             }
         }
     }

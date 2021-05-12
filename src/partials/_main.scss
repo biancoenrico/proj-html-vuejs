@@ -16,6 +16,9 @@
                 @include yellowButton; 
                 margin-right: 10px;
             }
+            .yellow:hover{
+                background-color: $hoverPrimaryColor
+            }
         }
         .image{
             margin: 50px;
@@ -85,6 +88,9 @@
                     @include bigButton;
                     @include redButton; 
                     margin-right: 10px;
+                }
+                .red:hover{
+                    background-color: $buttonPrimaryColor;
                 }
             }
             .image{
@@ -191,6 +197,10 @@
                 @include standardButton;
                 @include redButton;
             }
+            .red:hover{
+                background-color: $buttonPrimaryColor;
+            }
+            
         }
     }
     div{
@@ -199,6 +209,9 @@
         .yellow{
             @include bigButton;
             @include yellowButton;
+        }
+        .yellow:hover{
+            background-color: $hoverSecondaryColor;
         }
     }
 }
@@ -247,6 +260,9 @@
         margin-top: 40px;
         @include bigButton;
         @include redButton;
+    }
+    .red:hover{
+        background-color: $buttonPrimaryColor;
     }
     .reverse{
         flex-direction: row-reverse;

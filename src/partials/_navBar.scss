@@ -28,6 +28,10 @@ nav{
                 @include yellowButton;
                 font-size: $mediumFontSize;
             }
+            .yellow:hover{
+                background-color: $hoverTertiaryColor;
+                color: #e56768;
+            }
         }
     }
 }

@@ -63,11 +63,16 @@ nav .container .flex .yellow {
   padding: 20px 35px;
   border-radius: 999px;
   outline: none;
+  cursor: pointer;
   background-color: #e9d758;
   font-weight: bold;
   color: white;
   border: none;
   font-size: 25px;
+}
+nav .container .flex .yellow:hover {
+  background-color: white;
+  color: #e56768;
 }
 
 header {
@@ -94,21 +99,30 @@ header .header-title div .yellow {
   padding: 20px 35px;
   border-radius: 999px;
   outline: none;
+  cursor: pointer;
   background-color: #e9d758;
   font-weight: bold;
   color: white;
   border: none;
   margin-right: 10px;
 }
+header .header-title div .yellow:hover {
+  background-color: #de6f70;
+}
 header .header-title div .white {
   padding: 20px 35px;
   border-radius: 999px;
   outline: none;
+  cursor: pointer;
   background-color: white;
   font-weight: bold;
   color: #de6f70;
   border: none;
   margin-left: 10px;
+}
+header .header-title div .white:hover {
+  background-color: #de6f70;
+  color: white;
 }
 
 .courses {
@@ -127,11 +141,15 @@ header .header-title div .white {
   padding: 20px 35px;
   border-radius: 999px;
   outline: none;
+  cursor: pointer;
   background-color: #e9d758;
   font-weight: bold;
   color: white;
   border: none;
   margin-right: 10px;
+}
+.courses .flex .desc .yellow:hover {
+  background-color: #db2a2c;
 }
 .courses .flex .image {
   margin: 50px;
@@ -201,11 +219,15 @@ header .header-title div .white {
   padding: 20px 35px;
   border-radius: 999px;
   outline: none;
+  cursor: pointer;
   background-color: #de6f70;
   font-weight: bold;
   color: white;
   border: none;
   margin-right: 10px;
+}
+.faculties .container .flex .desc .red:hover {
+  background-color: #e9d758;
 }
 .faculties .container .flex .image {
   width: 100%;
@@ -313,10 +335,14 @@ header .header-title div .white {
   padding: 10px 20px;
   border-radius: 999px;
   outline: none;
+  cursor: pointer;
   background-color: #de6f70;
   font-weight: bold;
   color: white;
   border: none;
+}
+.events .flex .session .red:hover {
+  background-color: #e9d758;
 }
 .events div {
   margin-top: 80px;
@@ -326,10 +352,14 @@ header .header-title div .white {
   padding: 20px 35px;
   border-radius: 999px;
   outline: none;
+  cursor: pointer;
   background-color: #e9d758;
   font-weight: bold;
   color: white;
   border: none;
+}
+.events div .yellow:hover {
+  background-color: #de6f70;
 }
 
 .references {
@@ -378,10 +408,14 @@ header .header-title div .white {
   padding: 20px 35px;
   border-radius: 999px;
   outline: none;
+  cursor: pointer;
   background-color: #de6f70;
   font-weight: bold;
   color: white;
   border: none;
+}
+.methods .red:hover {
+  background-color: #e9d758;
 }
 .methods .reverse {
   flex-direction: row-reverse;
@@ -493,6 +527,7 @@ footer .flex .search .cat .red {
   padding: 10px 20px;
   border-radius: 999px;
   outline: none;
+  cursor: pointer;
   background-color: #de6f70;
   font-weight: bold;
   color: white;
@@ -501,4 +536,7 @@ footer .flex .search .cat .red {
   border: 1px solid white;
   margin-right: 5px;
   margin-top: 10px;
+}
+footer .flex .search .cat .red:hover {
+  background-color: #e9d758;
 }
