@@ -109,6 +109,33 @@ var app = new Vue({
         }
       ],
       selectedInfo: 0,
+      latestCourses:
+      [
+        {
+            img:'img/Decisions-icon.png',
+            title:'make better decisions',
+            teacher:'james collins',
+            price:'$21',
+        },
+        {
+            img:'img/Speaker-icon.png',
+            title:'make better decisions',
+            teacher:'james collins',
+            price:'free',
+        },
+        {
+            img:'img/Network-icon.png',
+            title:'make better decisions',
+            teacher:'james collins',
+            price:'free',
+        },
+        {
+            img:'img/Brand-icon.png',
+            title:'make better decisions',
+            teacher:'james collins',
+            price:'free',
+        },
+      ]
     },
     methods: {
 

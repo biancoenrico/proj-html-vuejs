@@ -14,6 +14,7 @@
 <body>
     
     <div id="root">
+        <!-- Header -->
         <header>
             <!-- NAVBAR -->
             <nav>
@@ -42,7 +43,9 @@
                 </div>
             </div>
         </header>
+        <!-- End Header -->
 
+        <!-- Main -->
         <main>
             
                 <!-- Courses -->
@@ -202,33 +205,15 @@
                     <div class="container">
                         <h2>latest courses</h2>
                         <ul class="flex">
-                            <li class="item">
-                                <img src="img/Decisions-icon.png" alt="">
-                                <h3><strong>make better decisions</strong></h3>
-                                <span>teacher: <strong>james collins</strong> </span><br>
-                                <span>price: <strong>$21</strong> </span>
+                            <li class="item" v-for="(items,index) in latestCourses">
+
+                                <img :src="latestCourses[index].img" alt="">
+                                <h3>{{items.title}}</h3>
+                                <span>teacher: <strong>{{items.teacher}}</strong> </span><br>
+                                <span>price: <strong>{{items.price}}</strong></span>
+
                                 <button class="red"><i class="far fa-eye"></i> view courses</button>
-                            </li>
-                            <li class="item">
-                                <img src="img/Speaker-icon.png" alt="">
-                                <h3><strong>how to be a speaker</strong></h3>
-                                <span>teacher: <strong>james collins</strong> </span><br>
-                                <span>price: <strong>free</strong> </span>
-                                <button class="red"><i class="far fa-eye"></i> view courses</button>
-                            </li>
-                            <li class="item">
-                                <img src="img/Network-icon.png" alt="">
-                                <h3><strong>network introductions</strong></h3>
-                                <span>teacher: <strong>james collins</strong> </span><br>
-                                <span>price: <strong>free</strong> </span>
-                                <button class="red"><i class="far fa-eye"></i> view courses</button>
-                            </li>
-                            <li class="item">
-                                <img src="img/Brand-icon.png" alt="">
-                                <h3><strong>brand management</strong></h3>
-                                <span>teacher: <strong>james collins</strong> </span><br>
-                                <span>price: <strong>free</strong></span>
-                                <button class="red"><i class="far fa-eye"></i> view courses</button>
+
                             </li>
                         </ul>
                     </div>
@@ -317,6 +302,9 @@
                 </section>
                 <!-- End Partners -->
         </main>
+        <!-- End Main -->
+
+        <!-- Footer -->
         <footer>
             <div class="container">
                 
@@ -356,6 +344,7 @@
 
             </div>
         </footer>
+        <!-- End Footer -->
     </div>
 
     <script src="dist/app.js"></script>

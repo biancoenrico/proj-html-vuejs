@@ -67,7 +67,28 @@ var app = new Vue({
       name: 'graphics and design',
       desc: 'Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users\' specific needs and focus on the logic of displaying elements in interactive designs, to optimize the user experience.'
     }],
-    selectedInfo: 0
+    selectedInfo: 0,
+    latestCourses: [{
+      img: 'img/Decisions-icon.png',
+      title: 'make better decisions',
+      teacher: 'james collins',
+      price: '$21'
+    }, {
+      img: 'img/Speaker-icon.png',
+      title: 'make better decisions',
+      teacher: 'james collins',
+      price: 'free'
+    }, {
+      img: 'img/Network-icon.png',
+      title: 'make better decisions',
+      teacher: 'james collins',
+      price: 'free'
+    }, {
+      img: 'img/Brand-icon.png',
+      title: 'make better decisions',
+      teacher: 'james collins',
+      price: 'free'
+    }]
   },
   methods: {}
 });
