@@ -1,7 +1,6 @@
 nav{
     color: $textPrimaryColor;
     padding-top: 50px;
-
     .container{
         width: 90%;
         margin: auto;
@@ -27,6 +26,7 @@ nav{
             .yellow{
                 @include bigButton;
                 @include yellowButton;
+                font-size: $mediumFontSize;
             }
         }
     }

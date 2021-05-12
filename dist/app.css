@@ -13,7 +13,13 @@ li {
 }
 
 body {
-  font-family: "Catamaran", sans-serif;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 16px;
+  color: #454545;
+}
+
+button {
+  font-size: 16px;
 }
 
 .container {
@@ -23,6 +29,10 @@ body {
 
 .flex {
   display: flex;
+}
+
+h1, h2, h3, h4 {
+  color: #3d404f;
 }
 
 nav {
@@ -45,7 +55,7 @@ nav .container .flex {
 nav .container .flex li {
   display: inline-block;
   margin: 0px 10px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   text-align: right;
 }
@@ -54,15 +64,16 @@ nav .container .flex .yellow {
   border-radius: 999px;
   outline: none;
   background-color: #e9d758;
-  font-size: 25px;
   font-weight: bold;
   color: white;
   border: none;
+  font-size: 25px;
 }
 
 header {
-  background-color: #de6f70;
+  background-color: #e56768;
   background-image: url(/images/svg-0.svg?f4496f08cb8df58b18c75588dc734965);
+  height: 800px;
 }
 header .header-title {
   text-align: center;
@@ -74,7 +85,7 @@ header .header-title h1 {
 }
 header .header-title p {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
 }
 header .header-title div {
   margin-top: 40px;
@@ -84,72 +95,173 @@ header .header-title div .yellow {
   border-radius: 999px;
   outline: none;
   background-color: #e9d758;
-  font-size: 25px;
   font-weight: bold;
   color: white;
   border: none;
   margin-right: 10px;
-  font-size: 18px;
 }
 header .header-title div .white {
   padding: 20px 35px;
   border-radius: 999px;
   outline: none;
   background-color: white;
-  font-size: 25px;
   font-weight: bold;
   color: #de6f70;
   border: none;
   margin-left: 10px;
-  font-size: 18px;
 }
 
-.courses .flex .yellow {
+.courses {
+  padding: 150px 0;
+}
+.courses .flex .desc img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+.courses .flex .desc h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.courses .flex .desc .yellow {
+  margin-top: 30px;
   padding: 20px 35px;
   border-radius: 999px;
   outline: none;
   background-color: #e9d758;
-  font-size: 25px;
   font-weight: bold;
   color: white;
   border: none;
   margin-right: 10px;
-  font-size: 18px;
+}
+.courses .flex .image {
+  margin: 50px;
+  width: 120%;
 }
 
+.faculties .text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.faculties .text h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
 .faculties ul {
   display: flex;
+  justify-content: space-between;
+  width: 65%;
+  margin: auto;
 }
 .faculties ul li {
-  padding: 50px;
+  padding: 30px;
+  background-color: #e56768;
+  border: 1px solid lightgray;
+}
+.faculties ul li img {
+  filter: brightness(10000%);
 }
 .faculties .flex {
   flex-direction: row-reverse;
+  align-items: center;
 }
-.faculties .flex .red {
+.faculties .flex .desc {
+  text-align: center;
+}
+.faculties .flex .desc h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.faculties .flex .desc p {
+  line-height: 30px;
+  margin-bottom: 30px;
+  color: gray;
+}
+.faculties .flex .desc .red {
   padding: 20px 35px;
   border-radius: 999px;
   outline: none;
   background-color: #de6f70;
-  font-size: 25px;
   font-weight: bold;
   color: white;
   border: none;
   margin-right: 10px;
-  font-size: 18px;
+}
+.faculties .flex .image {
+  width: 100%;
+  margin: 100px;
+}
+.faculties .flex .image img {
+  width: 100%;
 }
 
 .university {
-  background-color: #de6f70;
-  padding: 100px 0;
+  background-color: #e56768;
+  padding-top: 100px;
+  color: white;
+}
+.university h2, .university h3 {
+  color: white;
+}
+.university .title {
+  text-align: center;
+  background-color: #db2a2c;
+  width: 330px;
+  margin: auto;
+}
+.university .title h2 {
+  font-size: 50px;
+}
+.university h3 {
+  font-size: 25px;
 }
 .university p {
   display: inline-block;
   width: 30%;
 }
+.university .timeline-top {
+  padding: 100px;
+  position: relative;
+}
+.university .timeline-top .demo {
+  position: absolute;
+  top: 100px;
+  left: 450px;
+}
+.university .timeline-top .demo p {
+  width: 300px;
+}
+.university .timeline-top .graduation {
+  position: absolute;
+  top: 100px;
+  right: 0px;
+}
+.university .timeline-top .graduation p {
+  width: 300px;
+}
+.university .timeline-bottom {
+  padding: 100px;
+  position: relative;
+}
+.university .timeline-bottom .orientation {
+  position: absolute;
+  top: 0px;
+  left: 200px;
+}
+.university .timeline-bottom .orientation p {
+  width: 300px;
+}
+.university .timeline-bottom .evaluation {
+  position: absolute;
+  top: 0px;
+  right: 250px;
+}
+.university .timeline-bottom .evaluation p {
+  width: 300px;
+}
+
 .events {
   padding: 100px 0;
-  background-color: #de6f70;
+  background-color: #e56768;
 }
 .events .flex {
   justify-content: space-around;
@@ -157,22 +269,36 @@ header .header-title div .white {
 .events .flex .session {
   background-color: white;
   border-radius: 15px;
-  padding: 20px;
+  padding: 40px 20px;
+  padding-bottom: 75px;
   width: 30%;
+  position: relative;
+}
+.events .flex .session p, .events .flex .session span {
+  color: gray;
+}
+.events .flex .session span {
+  line-height: 40px;
+}
+.events .flex .session h3 {
+  font-size: 30px;
 }
 .events .flex .session .red {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 2px 2px -2px rgba(0, 0, 0, 0.75);
   padding: 10px 20px;
   border-radius: 999px;
   outline: none;
   background-color: #de6f70;
-  font-size: 25px;
   font-weight: bold;
   color: white;
   border: none;
-  font-size: 18px;
 }
 .events div {
-  margin-top: 40px;
+  margin-top: 80px;
   text-align: center;
 }
 .events div .yellow {
@@ -180,11 +306,9 @@ header .header-title div .white {
   border-radius: 999px;
   outline: none;
   background-color: #e9d758;
-  font-size: 25px;
   font-weight: bold;
   color: white;
   border: none;
-  font-size: 18px;
 }
 
 .references {
@@ -194,16 +318,33 @@ header .header-title div .white {
 .references .container {
   margin: auto;
 }
+.references .container h2 {
+  font-size: 50px;
+  text-align: left;
+  padding: 50px 0;
+}
 .references .container .flex {
   justify-content: space-around;
 }
+.references .container .flex .item {
+  box-shadow: 0px 0px 17px -12px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  margin-right: 40px;
+  line-height: 35px;
+}
 .references .container .flex .item img {
-  width: 25%;
+  width: 40%;
+  margin: 20px 0px;
 }
 
 .methods .flex {
   align-items: center;
   margin-bottom: 100px;
+}
+.methods .flex h2 {
+  font-size: 50px;
+  margin-bottom: 40px;
+  line-height: 45px;
 }
 .methods .desc {
   margin: 80px;
@@ -212,45 +353,71 @@ header .header-title div .white {
   width: 80%;
 }
 .methods .red {
+  margin-top: 40px;
   padding: 20px 35px;
   border-radius: 999px;
   outline: none;
   background-color: #de6f70;
-  font-size: 25px;
   font-weight: bold;
   color: white;
   border: none;
-  font-size: 18px;
 }
 .methods .reverse {
   flex-direction: row-reverse;
 }
 
 .subscribe {
-  background-color: #de6f70;
-  padding: 30px 0;
+  background-color: #e56768;
+  padding: 60px 0;
+  color: white;
 }
 .subscribe .flex {
   justify-content: space-between;
   align-items: center;
 }
 .subscribe .flex h2 {
-  font-size: 25px;
+  font-size: 50px;
+  color: white;
 }
 .subscribe .flex input {
   border-radius: 999px;
   border: none;
   padding: 25px 40px;
   outline: none;
-  width: 500px;
+  width: 450px;
 }
 
-.partners {
-  height: 500px;
+.partners .container {
+  text-align: center;
+}
+.partners .container h2 {
+  font-size: 50px;
+  margin: 40px 0;
+}
+.partners .container ul {
+  padding-top: 100px;
+  padding-bottom: 500px;
+  position: relative;
+}
+.partners .container ul .layover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.partners .container ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+.partners .container ul li img {
+  height: 50px;
+  width: auto;
 }
 
 footer {
-  background-color: #de6f70;
+  background-color: #e56768;
   color: white;
   padding: 100px 0;
 }
@@ -282,20 +449,20 @@ footer .flex .circle {
   margin-top: 20px;
 }
 footer .flex .search {
-  width: 30%;
+  width: 35%;
 }
 footer .flex .search input {
   border-radius: 999px;
   border: none;
   padding: 25px 40px;
   outline: none;
-  font-size: 18px;
+  font-size: 16px;
   width: 400px;
 }
 footer .flex .search p {
   text-align: right;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 30px;
 }
 footer .flex .search .cat {
@@ -306,7 +473,6 @@ footer .flex .search .cat .red {
   border-radius: 999px;
   outline: none;
   background-color: #de6f70;
-  font-size: 25px;
   font-weight: bold;
   color: white;
   border: none;

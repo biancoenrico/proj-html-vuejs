@@ -1,42 +1,143 @@
 .courses{
+    padding: 150px 0;
     .flex{
-        .yellow{
-            @include bigButton;
-            @include yellowButton; 
-            margin-right: 10px;
-            font-size: $standardFontSize;
+        .desc{
+            img{
+                width: 50px;
+                margin-bottom: 20px;
+            }
+            h2{
+                font-size: $secondaryTitleSize;
+                margin-bottom: 30px;
+            }
+            .yellow{
+                margin-top: 30px;
+                @include bigButton;
+                @include yellowButton; 
+                margin-right: 10px;
+            }
+        }
+        .image{
+            margin: 50px;
+            width: 120%;
         }
     }
 }
 .faculties{
+    .text{
+        text-align: center;
+        margin-bottom: 30px;
+        h2{
+            font-size: $secondaryTitleSize;
+            margin-bottom: 30px;
+        }
+    }
     ul{
         display: flex;
+        justify-content: space-between;
+        width: 65%;
+        margin: auto;
         li{
-            padding:50px
+            padding:30px;
+            background-color: $primaryColor;
+            border: 1px solid lightgray;
+            img{
+                filter: brightness(10000%);
+            }
+            
         }
     }
     .flex{
         flex-direction: row-reverse;
-        .red{
-            @include bigButton;
-            @include redButton; 
-            margin-right: 10px;
-            font-size: $standardFontSize;
+        align-items: center;
+        .desc{
+            text-align: center;
+            h2{
+                font-size: $secondaryTitleSize;
+                margin-bottom: 30px;
+            }
+            p{
+                line-height: 30px;
+                margin-bottom: 30px;
+                color: $textSecondaryColor;
+            }
+            .red{
+                @include bigButton;
+                @include redButton; 
+                margin-right: 10px;
+            }
+        }
+        .image{
+            width: 100%;
+            margin: 100px;
+            img{
+                width: 100%;
+            }
         }
     }
 }
 .university{
     background-color: $primaryColor;
-    padding: 100px 0;
+    padding-top: 100px;
+    color: $textPrimaryColor;
+    h2,h3{
+        color: $textPrimaryColor;
+    }
+    .title{
+        text-align: center;
+        background-color: #db2a2c;
+        width: 330px;
+        margin: auto;
+        h2{
+            font-size: $secondaryTitleSize;
+        }
+    }
+    h3{
+        font-size: $mediumFontSize;
+    }
     p{
         display: inline-block;
         width: 30%;
     }
     .timeline-top{
-
+        padding: 100px;
+        position: relative;
+        .demo{
+            position: absolute;
+            top: 100px;
+            left: 450px;
+            p{
+                width: 300px;
+            }
+        }
+        .graduation{
+            position: absolute;
+            top: 100px;
+            right: 0px;
+            p{
+                width: 300px;
+            }
+        }
     }
     .timeline-bottom{
-        
+        padding: 100px;
+        position: relative;
+        .orientation{
+            position: absolute;
+            top: 0px;
+            left: 200px;
+            p{
+                width: 300px;
+            }
+        }
+        .evaluation{
+            position: absolute;
+            top: 0px;
+            right: 250px;
+            p{
+                width: 300px;
+            }
+        }
     }
 }
 .events{
@@ -47,22 +148,36 @@
         .session{
             background-color: $secondaryColor;
             border-radius: 15px;
-            padding: 20px;
+            padding: 40px 20px;
+            padding-bottom: 75px;
             width: 30%;
+            position: relative;
+            p,span{
+                color: $textSecondaryColor;
+            }
+            span{
+                line-height: 40px;
+            }
+            h3{
+                font-size: $tertiaryTitleSize;
+            }
             .red{
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translate(-50% , -50%);
+                box-shadow: 0px 2px 2px -2px rgb(0 0 0 / 75%);
                 @include standardButton;
                 @include redButton;
-                font-size: $standardFontSize;
             }
         }
     }
     div{
-        margin-top: 40px;
+        margin-top: 80px;
         text-align: center;
         .yellow{
             @include bigButton;
             @include yellowButton;
-            font-size: $standardFontSize;
         }
     }
 }
@@ -71,11 +186,21 @@
     margin: 200px 0;
     .container{
         margin: auto;
+        h2{
+            font-size: $secondaryTitleSize;
+            text-align: left;
+            padding: 50px 0;
+        }
         .flex{
             justify-content: space-around;
             .item{
+                box-shadow: 0px 0px 17px -12px rgb(0 0 0 / 75%);
+                padding: 10px;
+                margin-right: 40px;
+                line-height: 35px;
                 img{
-                    width: 25%;
+                    width: 40%;
+                    margin: 20px 0px;
                 }
             }
         }
@@ -85,6 +210,11 @@
     .flex{
         align-items: center;
         margin-bottom: 100px;
+        h2{
+            font-size: $secondaryTitleSize;
+            margin-bottom: 40px;
+            line-height: 45px;
+        }
     }
     .desc{
         margin: 80px;
@@ -93,9 +223,9 @@
         width: 80%;
     }
     .red{
+        margin-top: 40px;
         @include bigButton;
         @include redButton;
-        font-size: $standardFontSize;
     }
     .reverse{
         flex-direction: row-reverse;
@@ -103,19 +233,44 @@
 }
 .subscribe{
     background-color: $primaryColor;
-    padding: 30px 0;
+    padding: 60px 0;
+    color: $secondaryColor;
     .flex{
         justify-content: space-between;
         align-items: center;
         h2{
-            font-size: $mediumFontSize;
+            font-size: $secondaryTitleSize;
+            color: $textPrimaryColor
         }
         input{
             @include searchBar;
-            width: 500px;
+            width: 450px;
         }
     }
 }
 .partners{
-    height: 500px;
+    .container{
+        text-align: center;
+        h2{
+            font-size: $secondaryTitleSize;
+            margin: 40px 0;
+        }
+        ul{
+            padding-top: 100px;
+            padding-bottom: 500px;
+            position: relative;
+            .layover{
+                @include layover;
+                @include whiteLayover;
+            }
+            li{
+                display: inline-block;
+                margin-right: 40px;
+                img{
+                    height: 50px;
+                    width: auto;
+                }
+            }
+        }
+    }
 }

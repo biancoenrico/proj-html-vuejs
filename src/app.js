@@ -64,7 +64,17 @@ var app = new Vue({
         'MEDICINE',
         'LAW',
         'FITNESS',
-      ]
+      ],
+      partners:[
+          '2',
+          '3',
+          '4',
+          '5',
+          '6',
+          '8',
+          '1',
+          '7',
+      ],
     },
     methods: {
 

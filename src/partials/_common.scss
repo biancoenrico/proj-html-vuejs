@@ -10,7 +10,12 @@ li{
     list-style-type: none;
 }
 body{
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: $standardFontSize;
+    color:  $mainTextColor;
+}
+button{
+    font-size: $standardFontSize;
 }
 .container{
     width: 65%;
@@ -18,4 +23,7 @@ body{
 }
 .flex{
     display: flex;
+}
+h1,h2,h3,h4{
+    color: $titleColor;
 }

@@ -29,7 +29,7 @@ footer{
             margin-top: 20px;
         }
         .search{
-            width: 30%;
+            width: 35%;
             input{
                 @include searchBar;
                 font-size: $standardFontSize;

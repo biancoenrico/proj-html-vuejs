@@ -1,6 +1,7 @@
 header{
     background-color: $primaryColor;
     background-image: url(../../svg/svg-0.svg);
+    height: 800px;
     .header-title{
         text-align: center;
         padding: 80px 0;
@@ -18,13 +19,11 @@ header{
                 @include bigButton;
                 @include yellowButton; 
                 margin-right: 10px;
-                font-size: $standardFontSize
             }
             .white{
                 @include bigButton;
                 @include whiteButton;
                 margin-left: 10px;
-                font-size: $standardFontSize
             }
         }
     }
