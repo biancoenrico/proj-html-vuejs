@@ -16,30 +16,34 @@
     <div id="root">
         <!-- Header -->
         <header>
-            <!-- NAVBAR -->
-            <nav>
-                <div class="container">
-                    <div class="logo">
-                        <img src="img/theme_eduprime_logo.png" alt="">
-                    </div>
-                    <div class="flex">
-                        <ul>
-                            <li v-for="item in navList">{{item.name}} <i v-if="item.name != 'Contact' && item.name != 'Purchase'" class="fas fa-sort-down"></i></li>
-                        </ul>
-                        
+            <div class="background" style="background-image:url('img/theme_slider2_bg-1.jpg');position: relative; height: 100%; opacity: 0.1;"></div>
+                <!-- NAVBAR -->
+                <div class="items" style="position: absolute;top: 0%;left: 0%; width: 100%;">
+                    <nav>
+                        <div class="container">
+                            <div class="logo">
+                                <img src="img/theme_eduprime_logo.png" alt="">
+                            </div>
+                            <div class="flex">
+                                <ul>
+                                    <li v-for="item in navList">{{item.name}} <i v-if="item.name != 'Contact' && item.name != 'Purchase'" class="fas fa-sort-down"></i></li>
+                                </ul>
+                                
+                                <div>
+                                    <button class="yellow">view courses</button>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- END NAVBAR -->
+                    <div class="header-title">
+                        <h1>key to your success</h1>
+                        <p>Eduprime is the most versatile WordPress theme for educational purposes,<br> showcasing universities, courses, secondary schools etc.</p>
                         <div>
-                            <button class="yellow">view courses</button>
+                            <button class="yellow"><i class="fas fa-search"></i> search courses</button>
+                            <button class="white"><i class="fas fa-user-plus"></i> apply for university</button>
                         </div>
                     </div>
-                </div>
-            </nav>
-            <!-- END NAVBAR -->
-            <div class="header-title">
-                <h1>key to your success</h1>
-                <p>Eduprime is the most versatile WordPress theme for educational purposes,<br> showcasing universities, courses, secondary schools etc.</p>
-                <div>
-                    <button class="yellow"><i class="fas fa-search"></i> search courses</button>
-                    <button class="white"><i class="fas fa-user-plus"></i> apply for university</button>
                 </div>
             </div>
         </header>
@@ -50,6 +54,8 @@
             
                 <!-- Courses -->
                 <section class="courses">
+                    <div style="background-image:url('svg-0.svg'); opacity: 0.9; position: absolute; top: 0%; left: 0;">
+                    </div>
                     <div class="container">
                         <div class="flex">
                             <div class="desc">

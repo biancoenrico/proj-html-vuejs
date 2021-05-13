@@ -1,37 +1,40 @@
 header{
-    background-color: $primaryColor;
-    background-image: url(../../svg/svg-0.svg);
-    height: 800px;
-    .header-title{
-        text-align: center;
-        padding: 80px 0;
-        h1{
-            font-size: $largeFontSize;
-            color: $textPrimaryColor;
-        }
-        p{
-            color: $textPrimaryColor;
-            font-size: $standardFontSize;
-        }
-        div{
-            margin-top: 40px;
-            .yellow{
-                @include bigButton;
-                @include yellowButton; 
-                margin-right: 10px;
-            }
-            .yellow:hover{
-                background-color: $hoverSecondaryColor;
-            }
-            .white{
-                @include bigButton;
-                @include whiteButton;
-                margin-left: 10px;
-            }
-            .white:hover{
-                background-color: $hoverSecondaryColor;
-                color: $textPrimaryColor;
+    height: 845px;
+    .background{
+        .items{
+            .header-title{
+                text-align: center;
+                padding: 80px 0;
+                h1{
+                    font-size: $largeFontSize;
+                    color: $textPrimaryColor;
+                }
+                p{
+                    color: $textPrimaryColor;
+                    font-size: $standardFontSize;
+                }
+                div{
+                    margin-top: 40px;
+                    .yellow{
+                        @include bigButton;
+                        @include yellowButton; 
+                        margin-right: 10px;
+                    }
+                    .yellow:hover{
+                        background-color: $hoverSecondaryColor;
+                    }
+                    .white{
+                        @include bigButton;
+                        @include whiteButton;
+                        margin-left: 10px;
+                    }
+                    .white:hover{
+                        background-color: $hoverSecondaryColor;
+                        color: $textPrimaryColor;
+                    }
+                }
             }
         }
     }
+    
 }
