@@ -16,280 +16,289 @@
     <div id="root">
         <!-- Header -->
         <header>
-            <div class="background" style="background-image: url('img/theme_slider2_bg-1.jpg');">
-            </div>
-            <div class="items">
-                <!-- NAVBAR -->
-                <nav>
-                    <div class="container">
-                        <div class="logo">
-                            <img src="img/theme_eduprime_logo.png" alt="">
-                        </div>
-                        <div class="flex">
-                            <ul>
-                                <li v-for="item in navList">{{item.name}} <i v-if="item.name != 'Contact' && item.name != 'Purchase'" class="fas fa-sort-down"></i></li>
-                            </ul>
-                            
-                            <div>
-                                <button class="yellow">view courses</button>
+            <div class="overlay">
+                <div class="background" style="background-image: url('img/theme_slider2_bg-1.jpg');">
+                </div>
+                <div class="items">
+                    <!-- NAVBAR -->
+                    <nav>
+                        <div class="container">
+                            <div class="logo">
+                                <img src="img/theme_eduprime_logo.png" alt="">
+                            </div>
+                            <div class="flex">
+                                <ul>
+                                    <li v-for="item in navList">{{item.name}} <i v-if="item.name != 'Contact' && item.name != 'Purchase'" class="fas fa-sort-down"></i></li>
+                                </ul>
+                                
+                                <div>
+                                    <button class="yellow">view courses</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </nav>
-                <!-- END NAVBAR -->
-                <div class="header-title">
-                    <h1>key to your success</h1>
-                    <p>Eduprime is the most versatile WordPress theme for educational purposes,<br> showcasing universities, courses, secondary schools etc.</p>
-                    <div>
-                        <button class="yellow"><i class="fas fa-search"></i> search courses</button>
-                        <button class="white"><i class="fas fa-user-plus"></i> apply for university</button>
+                    </nav>
+                    <!-- END NAVBAR -->
+                    <div class="header-title">
+                        <h1>key to your success</h1>
+                        <p>Eduprime is the most versatile WordPress theme for educational purposes,<br> showcasing universities, courses, secondary schools etc.</p>
+                        <div>
+                            <button class="yellow"><i class="fas fa-search"></i> search courses</button>
+                            <button class="white"><i class="fas fa-user-plus"></i> apply for university</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            
+            <div class="background-wave" style="background-image: url('img/Wave-1.png');">
+            </div>
         </header>
         <!-- End Header -->
 
         <!-- Main -->
         <main>
-
-                <!-- Courses -->
-                <section class="courses">
-                    <div class="container">
-                        <div class="flex">
-                            <div class="desc">
-                                <img src="img/Books-icon.png" alt="">
-                                <h2>thousand of courses for any type of student</h2>
-                                <p>
-                                    At EduPrime, it doesn't matter what domain you wish to pursue a career in. Here you
-                                    can find a course that satisfies your needs within a click away and applies for a course
-                                    in a matter of minutes. EduPrime is ranked as the most versatile university in the
-                                    world, thanks to the number of courses it provides.
-                                </p>
-                                <button class="yellow">browse trough courses</button>
-                            </div>
-                            <div class="image">
-                                <img src="img/Graduation-Illustration.png" alt="">
-                            </div>
+            <!-- Courses -->
+            <section class="courses">
+                <div class="container">
+                    <div class="flex">
+                        <div class="desc">
+                            <img src="img/Books-icon.png" alt="">
+                            <h2>thousand of courses for any type of student</h2>
+                            <p>
+                                At EduPrime, it doesn't matter what domain you wish to pursue a career in. Here you
+                                can find a course that satisfies your needs within a click away and applies for a course
+                                in a matter of minutes. EduPrime is ranked as the most versatile university in the
+                                world, thanks to the number of courses it provides.
+                            </p>
+                            <button class="yellow">browse trough courses</button>
+                        </div>
+                        <div class="image">
+                            <img src="img/Graduation-Illustration.png" alt="">
                         </div>
                     </div>
-                </section>
-                <!-- End Courses -->
-                <!--  -->
-                <!-- Faculties -->
-                <section class="faculties">
-                    
-                    <div class="text">
-                        <h2>Faculties avaliable at EduPrime</h2>
-                        <span>
-                            A single university with a load of courses, tailored <br>
-                            to satisfy any student's needs.
-                        </span>
-                    </div>
+                </div>
+            </section>
+            <!-- End Courses -->
+            <!--  -->
+            <!-- Faculties -->
+            <section class="faculties">
                 
-                    <div class="list-style">
-                        <ul>
-                            <li :class="{active: selectedInfo == index}" v-for="(items , index) in facultyInfo" @click="selectedInfo = index">
-                                <div class="square" :class="{visible: selectedInfo == index}"></div>
-                                <img :src="items.icon" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="container">
-                        <div class="flex">
-                            <div class="desc">
-                                <h2>{{facultyInfo[selectedInfo].name}}</h2>
-                                <p>
-                                    {{facultyInfo[selectedInfo].desc}}
-                                </p>
-                                <button class="red">browse trough courses</button>
-                            </div>
-                            <div class="image">
-                                <img :src="facultyInfo[selectedInfo].img" alt="">
-                            </div>
+                <div class="text">
+                    <h2>Faculties avaliable at EduPrime</h2>
+                    <span>
+                        A single university with a load of courses, tailored <br>
+                        to satisfy any student's needs.
+                    </span>
+                </div>
+            
+                <div class="list-style">
+                    <ul>
+                        <li :class="{active: selectedInfo == index}" v-for="(items , index) in facultyInfo" @click="selectedInfo = index">
+                            <div class="square" :class="{visible: selectedInfo == index}"></div>
+                            <img :src="items.icon" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <div class="flex">
+                        <div class="desc">
+                            <h2>{{facultyInfo[selectedInfo].name}}</h2>
+                            <p>
+                                {{facultyInfo[selectedInfo].desc}}
+                            </p>
+                            <button class="red">browse trough courses</button>
+                        </div>
+                        <div class="image">
+                            <img :src="facultyInfo[selectedInfo].img" alt="">
                         </div>
                     </div>
-                </section>
-                <!--End Faculties -->
-                <!--  -->
-                <!-- University -->
-                <section class="university">
-                    <div class="container">
-                        <div class="title">
-                            <h2>university year</h2>
+                </div>
+            </section>
+            <!--End Faculties -->
+            <!--  -->
+            <!-- University -->
+            <section class="university">
+                <div class="container">
+                    <div class="title">
+                        <h2>university year</h2>
+                    </div>
+                    <div class="timeline-top">
+                        <div class="demo">
+                            <h3>Demo Classes</h3>
+                            <p>
+                                In the first week, students try to accommodate with the
+                                teaching style and choose their optional courses.
+                            </p>
                         </div>
-                        <div class="timeline-top">
-                            <div class="demo">
-                                <h3>Demo Classes</h3>
-                                <p>
-                                    In the first week, students try to accommodate with the
-                                    teaching style and choose their optional courses.
-                                </p>
-                            </div>
-                            <div class="graduation">
-                                <h3>Graduation Day</h3>
-                                <p>
-                                    On the day of graduation, all students gather for the
-                                    ceremony and then network and party among others.
-                                </p>
-                            </div>
+                        <div class="graduation">
+                            <h3>Graduation Day</h3>
+                            <p>
+                                On the day of graduation, all students gather for the
+                                ceremony and then network and party among others.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/Timeline-Item.png" alt="">
+                    </div>
+                    <div class="timeline-bottom">
+                        <div class="orientation">
+                            <h3>Orientation</h3>
+                            <p>
+                                First day of the university year, all students gather for
+                                the opening ceremony and then network with others.
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <h3>Evaluation</h3>
+                            <p>
+                                At the end of a semester, students take a general
+                                evaluation test for every subject they're learning.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="background-wave" style="background-image: url('svg/svg-0.svg');">
+                </div>
+            </section>
+            <!-- End University -->
+            <!--  -->
+            <!-- Events -->
+            <section class="events">
+                <div class="container">
+                    <ul class="flex">
+                        <li class="session">
+                            <h3>coaching sessions</h3>
+                            <span>20 May 21:30 PM</span>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor[...]
+                            </p>
+                            <button class="red"><i class="fas fa-plus"></i> find more</button>
+                        </li>
+                        <li class="session">
+                            <h3>coaching sessions</h3>
+                            <span>24 Mar 18:00 PM</span>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor[...]
+                            </p>
+                            <button class="red"><i class="fas fa-plus"></i> find more</button>
+                        </li>
+                        <li class="session">
+                            <h3>coaching sessions</h3>
+                            <span>12 Feb 13:30 PM</span>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor[...]
+                            </p>
+                            <button class="red"><i class="fas fa-plus"></i> find more</button>
+                        </li>
+                    </ul>
+                    <div>
+                        <button class="yellow">view all events</button>
+                    </div>
+                    <div class="background-wave-reverse" style="background-image: url('svg/svg-1.svg');">
+                    </div>
+                </div>
+            </section>
+            <!-- End Events -->
+            <!--  -->
+            <!-- latest Courses -->
+            <section class="references">
+                <div class="container">
+                    <h2>latest courses</h2>
+                    <ul class="flex">
+                        <li class="item" v-for="(items,index) in latestCourses">
+
+                            <img :src="latestCourses[index].img" alt="">
+                            <h3>{{items.title}}</h3>
+                            <span>teacher: <strong>{{items.teacher}}</strong> </span><br>
+                            <span>price: <strong>{{items.price}}</strong></span>
+
+                            <button class="red"><i class="far fa-eye"></i> view courses</button>
+
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- End latest Courses -->
+            <!--  -->
+            <!-- Methods -->
+            <section class="methods">
+                <div class="container">
+                    <div class="flex">
+                        <div class="desc">
+                            <h2>thousand of courses for any type of student</h2>
+                            <p>
+                                EduPrime has gathered teachers from around the globe to <br>
+                                brainstorm in order to facilitate the evaluation of our students.<br>
+                                Every teacher from our university has an influence on how<br>
+                                students are evaluated at his/her subject.
+                            </p>
+                            <button class="red">discover the methods</button>
                         </div>
                         <div>
-                            <img src="img/Timeline-Item.png" alt="">
-                        </div>
-                        <div class="timeline-bottom">
-                            <div class="orientation">
-                                <h3>Orientation</h3>
-                                <p>
-                                    First day of the university year, all students gather for
-                                    the opening ceremony and then network with others.
-                                </p>
-                            </div>
-                            <div class="evaluation">
-                                <h3>Evaluation</h3>
-                                <p>
-                                    At the end of a semester, students take a general
-                                    evaluation test for every subject they're learning.
-                                </p>
-                            </div>
+                            <img src="img/Exam-Illustration.png" alt="">
                         </div>
                     </div>
-                </section>
-                <!-- End University -->
-                <!--  -->
-                <!-- Events -->
-                <section class="events">
-                    <div class="container">
-                        <ul class="flex">
-                            <li class="session">
-                                <h3>coaching sessions</h3>
-                                <span>20 May 21:30 PM</span>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor[...]
-                                </p>
-                                <button class="red"><i class="fas fa-plus"></i> find more</button>
-                            </li>
-                            <li class="session">
-                                <h3>coaching sessions</h3>
-                                <span>24 Mar 18:00 PM</span>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor[...]
-                                </p>
-                                <button class="red"><i class="fas fa-plus"></i> find more</button>
-                            </li>
-                            <li class="session">
-                                <h3>coaching sessions</h3>
-                                <span>12 Feb 13:30 PM</span>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor[...]
-                                </p>
-                                <button class="red"><i class="fas fa-plus"></i> find more</button>
-                            </li>
-                        </ul>
+                </div>
+                <div class="container">
+                    <div class="flex reverse">
+                        <div class="desc">
+                            <h2>Variable fees for
+                                international students
+                            </h2>
+                            <p>
+                                EduPrime has gathered teachers from around the globe to<br>
+                                brainstorm in order to facilitate the evaluation of our students.<br>
+                                Every teacher from our university has an influence on how<br>
+                                students are evaluated at his/her subject.
+                            </p>
+                            <button class="red">list of fees</button>
+                        </div>
                         <div>
-                            <button class="yellow">view all events</button>
+                            <img src="img/Girl-Illustration.png" alt="">
                         </div>
                     </div>
-                </section>
-                <!-- End Events -->
-                <!--  -->
-                <!-- latest Courses -->
-                <section class="references">
-                    <div class="container">
-                        <h2>latest courses</h2>
-                        <ul class="flex">
-                            <li class="item" v-for="(items,index) in latestCourses">
-
-                                <img :src="latestCourses[index].img" alt="">
-                                <h3>{{items.title}}</h3>
-                                <span>teacher: <strong>{{items.teacher}}</strong> </span><br>
-                                <span>price: <strong>{{items.price}}</strong></span>
-
-                                <button class="red"><i class="far fa-eye"></i> view courses</button>
-
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <!-- End latest Courses -->
-                <!--  -->
-                <!-- Methods -->
-                <section class="methods">
-                    <div class="container">
-                        <div class="flex">
-                            <div class="desc">
-                                <h2>thousand of courses for any type of student</h2>
-                                <p>
-                                    EduPrime has gathered teachers from around the globe to <br>
-                                    brainstorm in order to facilitate the evaluation of our students.<br>
-                                    Every teacher from our university has an influence on how<br>
-                                    students are evaluated at his/her subject.
-                                </p>
-                                <button class="red">discover the methods</button>
-                            </div>
-                            <div>
-                                <img src="img/Exam-Illustration.png" alt="">
-                            </div>
+                </div>
+            </section>
+            <!-- End Methods -->
+            <!--  -->
+            <!-- Subscribe -->
+            <section class="subscribe">
+                <div class="container">
+                    <div class="flex">
+                        <div>
+                            <h2>subscribe now to Our Newsletter!</h2>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="email address">
+                            <div class="circle"><i class="fas fa-paper-plane"></i></div>
                         </div>
                     </div>
-                    <div class="container">
-                        <div class="flex reverse">
-                            <div class="desc">
-                                <h2>Variable fees for
-                                    international students
-                                </h2>
-                                <p>
-                                    EduPrime has gathered teachers from around the globe to<br>
-                                    brainstorm in order to facilitate the evaluation of our students.<br>
-                                    Every teacher from our university has an influence on how<br>
-                                    students are evaluated at his/her subject.
-                                </p>
-                                <button class="red">list of fees</button>
-                            </div>
-                            <div>
-                                <img src="img/Girl-Illustration.png" alt="">
-                            </div>
-                        </div>
+                </div>
+            </section>
+            <!-- End Subscribe -->
+            <!--  -->
+            <!-- Partners -->
+            <section class="partners">
+                <div class="container">
+                    <h2>partners</h2>
+                    <p>Leverage agile frameworks to provide a robust synopsis for high level <br>
+                        overviews. Iterative approaches to corporate strategy.</p>
+                    
+                    <ul>
+                        <div class="layover"></div>
+                        <li v-for="items in partners">
+                            <img :src="'img/partner-'+(items)+'.png'" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="background-wave" style="background-image: url('img/background-wave3.png');">
                     </div>
-                </section>
-                <!-- End Methods -->
-                <!--  -->
-                <!-- Subscribe -->
-                <section class="subscribe">
-                    <div class="container">
-                        <div class="flex">
-                            <div>
-                                <h2>subscribe now to Our Newsletter!</h2>
-                            </div>
-                            <div>
-                                <input type="text" placeholder="email address">
-                                <div class="circle"><i class="fas fa-paper-plane"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- End Subscribe -->
-                <!--  -->
-                <!-- Partners -->
-                <section class="partners">
-                    <div class="container">
-                        <h2>partners</h2>
-                        <p>Leverage agile frameworks to provide a robust synopsis for high level <br>
-                            overviews. Iterative approaches to corporate strategy.</p>
-                        
-                        <ul>
-                            <div class="layover"></div>
-                            <li v-for="items in partners">
-                                <img :src="'img/partner-'+(items)+'.png'" alt="">
-                            </li>
-                        </ul>
-                        
-                    </div>
-                </section>
-                <!-- End Partners -->
+                </div>
+            </section>
+            <!-- End Partners -->
         </main>
         <!-- End Main -->
 

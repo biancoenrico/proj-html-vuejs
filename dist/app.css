@@ -78,6 +78,9 @@ nav .container .flex .yellow:hover {
 }
 
 header {
+  position: relative;
+}
+header .overlay {
   height: 845px;
   background-color: #e56768;
   position: relative;
@@ -87,6 +90,13 @@ header .background {
   width: 100%;
   opacity: 0.1;
   height: 100%;
+}
+header .background-wave {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  top: 85%;
+  left: 0;
 }
 header .items {
   position: absolute;
@@ -102,7 +112,8 @@ header .items .header-title h1 {
 }
 header .items .header-title p {
   color: white;
-  font-size: 16px;
+  font-size: 25px;
+  padding-top: 30px;
 }
 header .items .header-title div {
   margin-top: 40px;
@@ -139,7 +150,7 @@ header .items .header-title div .white:hover {
 
 .courses {
   position: relative;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 .courses .flex .desc img {
   width: 50px;
@@ -169,6 +180,9 @@ header .items .header-title div .white:hover {
   width: 120%;
 }
 
+.faculties {
+  padding-top: 50px;
+}
 .faculties .text {
   text-align: center;
   margin-bottom: 30px;
@@ -177,18 +191,21 @@ header .items .header-title div .white:hover {
   font-size: 50px;
   margin-bottom: 30px;
 }
-.faculties ul {
+.faculties .list-style {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.faculties .list-style ul {
   display: flex;
   justify-content: space-between;
   width: 65%;
   margin: auto;
 }
-.faculties ul li {
+.faculties .list-style ul li {
   position: relative;
   padding: 30px;
   border: 1px solid lightgray;
 }
-.faculties ul li .square {
+.faculties .list-style ul li .square {
   position: absolute;
   top: 92%;
   left: 43%;
@@ -198,15 +215,15 @@ header .items .header-title div .white:hover {
   background-color: #e56768;
   display: none;
 }
-.faculties ul li .visible {
+.faculties .list-style ul li .visible {
   display: block;
 }
-.faculties ul .active {
+.faculties .list-style ul .active {
   padding: 30px;
   background-color: #e56768;
   border: 1px solid lightgray;
 }
-.faculties ul .active img {
+.faculties .list-style ul .active img {
   filter: brightness(10000%);
 }
 .faculties .container {
@@ -253,7 +270,16 @@ header .items .header-title div .white:hover {
 .university {
   background-color: #e56768;
   padding-top: 100px;
+  margin-top: 200px;
   color: white;
+  position: relative;
+}
+.university .background-wave {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  top: -24%;
+  left: 0;
 }
 .university h2, .university h3 {
   color: white;
@@ -318,6 +344,14 @@ header .items .header-title div .white:hover {
 .events {
   padding: 100px 0;
   background-color: #e56768;
+  position: relative;
+}
+.events .background-wave-reverse {
+  position: absolute;
+  width: 105%;
+  height: 100px;
+  bottom: -14%;
+  left: -10px;
 }
 .events .flex {
   justify-content: space-around;
@@ -505,7 +539,6 @@ header .items .header-title div .white:hover {
 }
 .partners .container ul {
   padding-top: 100px;
-  padding-bottom: 500px;
   position: relative;
 }
 .partners .container ul .layover {
@@ -515,6 +548,7 @@ header .items .header-title div .white:hover {
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.6);
+  height: 220px;
 }
 .partners .container ul li {
   display: inline-block;
@@ -523,6 +557,19 @@ header .items .header-title div .white:hover {
 .partners .container ul li img {
   height: 50px;
   width: auto;
+}
+.partners .item {
+  background-color: #f7f8fa;
+  height: 500px;
+  margin-top: 100px;
+  position: relative;
+}
+.partners .item .background-wave {
+  position: absolute;
+  width: 100%;
+  height: 102%;
+  top: -2%;
+  left: 0;
 }
 
 footer {
