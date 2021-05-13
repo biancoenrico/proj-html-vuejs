@@ -12,50 +12,49 @@
     <title>Document</title>
 </head>
 <body>
-    
+
     <div id="root">
         <!-- Header -->
         <header>
-            <div class="background" style="background-image:url('img/theme_slider2_bg-1.jpg');position: relative; height: 100%; opacity: 0.1;"></div>
+            <div class="background" style="background-image: url('img/theme_slider2_bg-1.jpg');">
+            </div>
+            <div class="items">
                 <!-- NAVBAR -->
-                <div class="items" style="position: absolute;top: 0%;left: 0%; width: 100%;">
-                    <nav>
-                        <div class="container">
-                            <div class="logo">
-                                <img src="img/theme_eduprime_logo.png" alt="">
-                            </div>
-                            <div class="flex">
-                                <ul>
-                                    <li v-for="item in navList">{{item.name}} <i v-if="item.name != 'Contact' && item.name != 'Purchase'" class="fas fa-sort-down"></i></li>
-                                </ul>
-                                
-                                <div>
-                                    <button class="yellow">view courses</button>
-                                </div>
+                <nav>
+                    <div class="container">
+                        <div class="logo">
+                            <img src="img/theme_eduprime_logo.png" alt="">
+                        </div>
+                        <div class="flex">
+                            <ul>
+                                <li v-for="item in navList">{{item.name}} <i v-if="item.name != 'Contact' && item.name != 'Purchase'" class="fas fa-sort-down"></i></li>
+                            </ul>
+                            
+                            <div>
+                                <button class="yellow">view courses</button>
                             </div>
                         </div>
-                    </nav>
-                    <!-- END NAVBAR -->
-                    <div class="header-title">
-                        <h1>key to your success</h1>
-                        <p>Eduprime is the most versatile WordPress theme for educational purposes,<br> showcasing universities, courses, secondary schools etc.</p>
-                        <div>
-                            <button class="yellow"><i class="fas fa-search"></i> search courses</button>
-                            <button class="white"><i class="fas fa-user-plus"></i> apply for university</button>
-                        </div>
+                    </div>
+                </nav>
+                <!-- END NAVBAR -->
+                <div class="header-title">
+                    <h1>key to your success</h1>
+                    <p>Eduprime is the most versatile WordPress theme for educational purposes,<br> showcasing universities, courses, secondary schools etc.</p>
+                    <div>
+                        <button class="yellow"><i class="fas fa-search"></i> search courses</button>
+                        <button class="white"><i class="fas fa-user-plus"></i> apply for university</button>
                     </div>
                 </div>
             </div>
+            
         </header>
         <!-- End Header -->
 
         <!-- Main -->
         <main>
-            
+
                 <!-- Courses -->
                 <section class="courses">
-                    <div style="background-image:url('svg-0.svg'); opacity: 0.9; position: absolute; top: 0%; left: 0;">
-                    </div>
                     <div class="container">
                         <div class="flex">
                             <div class="desc">
@@ -76,9 +75,7 @@
                     </div>
                 </section>
                 <!-- End Courses -->
-
                 <!--  -->
-
                 <!-- Faculties -->
                 <section class="faculties">
                     
@@ -98,7 +95,6 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="container">
                         <div class="flex">
                             <div class="desc">
@@ -115,9 +111,7 @@
                     </div>
                 </section>
                 <!--End Faculties -->
-
                 <!--  -->
-
                 <!-- University -->
                 <section class="university">
                     <div class="container">
@@ -162,9 +156,7 @@
                     </div>
                 </section>
                 <!-- End University -->
-
                 <!--  -->
-
                 <!-- Events -->
                 <section class="events">
                     <div class="container">
@@ -203,9 +195,7 @@
                     </div>
                 </section>
                 <!-- End Events -->
-
                 <!--  -->
-
                 <!-- latest Courses -->
                 <section class="references">
                     <div class="container">
@@ -225,9 +215,7 @@
                     </div>
                 </section>
                 <!-- End latest Courses -->
-
                 <!--  -->
-
                 <!-- Methods -->
                 <section class="methods">
                     <div class="container">
@@ -247,7 +235,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="container">
                         <div class="flex reverse">
                             <div class="desc">
@@ -269,9 +256,7 @@
                     </div>
                 </section>
                 <!-- End Methods -->
-
                 <!--  -->
-
                 <!-- Subscribe -->
                 <section class="subscribe">
                     <div class="container">
@@ -287,9 +272,7 @@
                     </div>
                 </section>
                 <!-- End Subscribe -->
-
                 <!--  -->
-
                 <!-- Partners -->
                 <section class="partners">
                     <div class="container">
@@ -313,9 +296,8 @@
         <!-- Footer -->
         <footer>
             <div class="container">
-                
-                <div class="flex">
 
+                <div class="flex">
                     <div>
                         <div class="logo">
                             <img src="img/theme_eduprime_logo.png" alt="">
@@ -328,14 +310,12 @@
                         <div class="circle"><i class="fab fa-twitter"></i></div>
                         <div class="circle"><i class="fab fa-instagram"></i></div>
                     </div>
-
                     <div>
                         <ul v-for="(item , index) in footerList">
                             <li class="name">{{item.name}}</li>
                             <li v-for="item in footerList[index].list">{{item}}</li>
                         </ul>
                     </div>
-
                     <div class="search">
                         <div>
                             <input type="text" placeholder="search...">
